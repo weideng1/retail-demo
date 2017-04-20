@@ -1,4 +1,5 @@
 target/
 nohup.out
 startup.out
+jupyter.out
 public/

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo 'installing jupyter'
+cd /tmp
+git clone https://github.com/slowenthal/cql_kernel/
+cd /tmp/cql_kernel
+git checkout cstar3
+pip install --upgrade pip
+pip install jupyter
+pip install jupyter_client
+pip install ipython
+pip install cql_kernel
+cd /tmp/cql_kernel/cql_kernel
+python install.py node0

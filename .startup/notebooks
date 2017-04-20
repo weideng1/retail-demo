@@ -1,5 +1,5 @@
 #!/bin/bash
 
 echo 'Starting Notebooks'
-wget -O /tmp/start_notebooks.sh https://gist.githubusercontent.com/weideng1/cc3ae8bd048537d4f12edef5b663259f/raw/dc62abf5fa891e2d32fea5187f7fd97c46684f62/start_notebooks.sh
+wget -O /tmp/start_notebooks.sh https://gist.githubusercontent.com/weideng1/cc3ae8bd048537d4f12edef5b663259f/raw/d76ba1beae0b8da5bd6d2e57fd4d9cda3d3c7b4f/start_notebooks.sh
 bash /tmp/start_notebooks.sh

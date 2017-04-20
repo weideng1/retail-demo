@@ -5,8 +5,9 @@ cd /tmp
 git clone https://github.com/slowenthal/cql_kernel/
 cd /tmp/cql_kernel
 git checkout cstar3
-apt-get install python-pip
+apt-get install -y python-pip gcc python-dev
 pip install --upgrade pip
+pip install --upgrade six
 pip install jupyter
 pip install jupyter_client
 pip install ipython

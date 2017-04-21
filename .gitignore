@@ -3,3 +3,4 @@ nohup.out
 startup.out
 jupyter.out
 public/
+notebooks/.ipynb_checkpoints

@@ -1,2 +1,3 @@
 #!/bin/bash
 
+python ../dataload.py ../data/metadata_10k.json ../data/geodata.csv

@@ -10,12 +10,16 @@ This is a guide for how to use the retail demo asset for DSE Search brought to y
 
 ### What is included?
 
-This field asset includes a working retail demo application leveraging the following DSE functionality:
+This field asset includes a series of interactive notebooks demonstrating the following DSE Search functionality:
 
-* Basic Text Search
-* Multi-condition Query
-* Fuzzy and Range Search
-* Faceting Query
+* Basic and Fuzzy Text Search
+* Multi-Condition Query
+* Facet Query
+* Result Highlighting
+* Advanced Text Analysis and Stemming
+* Geospatial Query
+* Query Time Join
+* DSE Search with Advanced Data Types: Tuples and UDT
 
 ### Business Take Aways
 

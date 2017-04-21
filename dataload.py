@@ -183,7 +183,7 @@ def load_geo_data(session, geopath):
 if __name__ == '__main__':
     meta_path = sys.argv[1]
     geo_path = sys.argv[2]
-    cluster = Cluster()
+    cluster = Cluster(['node0'])
     session = cluster.connect()
     session.execute(META_CF_DROP_STATEMENT)
     session.execute(RANK_CF_DROP_STATEMENT)

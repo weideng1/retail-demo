@@ -5,7 +5,7 @@ cd /tmp
 git clone https://github.com/slowenthal/cql_kernel/
 cd /tmp/cql_kernel
 git checkout cstar3
-apt-get install -y python-pip gcc python-dev
+#apt-get install -y python-pip gcc python-dev
 export PATH=/usr/local/bin:$PATH
 pip install --upgrade pip
 /usr/local/bin/pip install --upgrade six

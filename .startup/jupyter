@@ -5,6 +5,12 @@ cd /tmp
 git clone https://github.com/slowenthal/cql_kernel/
 cd /tmp/cql_kernel
 git checkout cstar3
+
+# workaround to make cql_kernel to work with DSE-5.1
+sed -i -e 's/3\.4\.0/3.4.4/' cql_kernel/cqlsh.py
+rm -f cql_kernel/lib/cassandra-driver*.zip
+cp -a /usr/share/dse/cassandra/lib/dse-driver*.zip cql_kernel/lib/
+
 #apt-get install -y python-pip gcc python-dev
 sleep 120
 export PATH=/usr/local/bin:/usr/bin:$PATH

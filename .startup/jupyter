@@ -22,6 +22,8 @@ pip install --upgrade pip
 /usr/local/bin/pip install cql_kernel
 
 # workaround for DSE-5.1
+rm -f /usr/local/lib/python2.7/dist-packages/cql_kernel/cqlsh.pyc
+sed -i -e 's/3\.4\.0/3.4.4/' /usr/local/lib/python2.7/dist-packages/cql_kernel/cqlsh.py
 rm -f /usr/local/lib/python2.7/dist-packages/cql_kernel/lib/cassandra-driver*.zip
 cp -a /usr/share/dse/cassandra/lib/dse-driver*.zip /usr/local/lib/python2.7/dist-packages/cql_kernel/lib/
 

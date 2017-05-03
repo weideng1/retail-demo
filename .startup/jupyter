@@ -19,7 +19,12 @@ pip install --upgrade pip
 /usr/local/bin/pip install jupyter
 /usr/local/bin/pip install jupyter_client
 /usr/local/bin/pip install ipython
-#/usr/local/bin/pip install cql_kernel
+/usr/local/bin/pip install cql_kernel
+
+# workaround for DSE-5.1
+rm -f /usr/local/lib/python2.7/dist-packages/cql_kernel/lib/cassandra-driver*.zip
+cp -a /usr/share/dse/cassandra/lib/dse-driver*.zip /usr/local/lib/python2.7/dist-packages/cql_kernel/lib/
+
 /usr/local/bin/pip install cassandra-driver
 cd /tmp/cql_kernel/cql_kernel
 python install.py node0

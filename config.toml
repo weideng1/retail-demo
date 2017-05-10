@@ -1,3 +1,4 @@
 languageCode = "en-us"
 title = "Retail Demo Docs"
 theme = "hugo-theme-learn"
+ignoreFiles = ["data/"]
